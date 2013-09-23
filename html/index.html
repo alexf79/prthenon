@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Inovium | Welcome </title>
+
+
+<!--my own  css st-->
+   <link href="css/style.css" type="text/css" rel="stylesheet" />
+<!--my own css end-->
+
+
+<!-- banner js and css st-->
+
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+
+<script type="text/javascript">
+
+/*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+
+</script>
+
+<style type="text/css">
+
+/*** set the width and height to match your images **/
+
+#slideshow {
+    position:relative;
+    height:292px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+</style>
+<!-- banner js and css end-->
+
+</head>
+
+<body>
+
+<div class="wrapper"><!--wrapper st-->
+
+<div class="main_header"><!--main_header st-->
+<div class="logo"></div>
+<div class="main_menu"><!--main_menu st-->
+<ul>
+            	<li id="active"><a href="#">Home</a></li>
+                <li><a href="#">Merchant Accounts</a></li>
+                <li><a href="#">Product</a></li>
+				<li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+				<li><a href="#">Features</a></li>
+				<li><a href="#">Blog</a></li>
+			</ul>
+</div><!--main_menu end-->
+</div><!--main_header end-->
+
+
+<div class="main_banner"><!--main_banner st-->
+<div class="banner_img">
+<div id="slideshow">
+    <img src="images/banner_img_01.jpg" alt="Slideshow Image 1" class="active" />
+    <img src="images/banner_img_02.jpg" alt="Slideshow Image 2" />
+    <img src="images/banner_img_03.jpg" alt="Slideshow Image 3" />
+   
+</div>
+</div>
+</div><!--main_banner end-->
+
+<div class="main_small_box"><!--main_small_box st-->
+<div class="small_box"><a href=""><div class="logo_01"></div></a></div>
+<div class="small_box"><a href=""><div class="logo_02"></div></a></div>
+<div class="small_box"><a href=""><div class="logo_03"></div></a></div>
+<div class="small_box"><a href=""><div class="logo_04"></div></a></div>
+<div class="small_box"><a href=""><div class="logo_05"></div></a></div>
+</div><!--main_small_box end-->
+
+
+
+<div class="hor_hr1"></div>
+<div class="hor_hr2"></div>
+
+<div class="main_ct_rt"><!--main_ct_rt st-->
+<div class="ct_rt_top"><!--ct_rt_top st-->
+<div class="blue_box"><div class="blue_box_tx" style="padding-left:50px;">Efficient</div></div>
+<div class="blue_box" style="margin-left:18px;"><div class="blue_box_tx">Convenient</div></div>
+<div class="blue_box" style="margin-left:18px;"><div class="blue_box_tx" style="padding-left:35px;">Automated</div></div>
+</div><!--ct_rt_top end-->
+
+
+<div class="ct_rt_bottom"><!--ct_rt_bottom st-->
+<div class="ct_rt_title_tx">Welcome To Our Company</div>
+<div class="ct_rt_small_tx">
+  <p>Inovium makes on-demand business process  automation products and   services based on a unique, robust, and highly flexible financial   services  platform. Our products automate and simplify a number of   complex manual  business processes such as &ldquo;procurement&rdquo; and &ldquo;invoicing   and payments&rdquo;,  facilitating the users&rsquo; transition from paper to   electronic processes and  delivering overwhelming economic benefits.   Inovium&rsquo;s solutions are aimed at  small to medium size businesses,   municipalities and educational institutions, and  are available for   clients&rsquo; use under a Software-as-a-Service business model<br />
+    <br />
+    <b>Our clients enjoy:</b> </p>
+  <p>&bull; Exceptionally high ROI<br />
+  &bull; Operational streamlining<br />
+  &bull; More efficient usage of labor<br />
+  &bull; Getting paid faster<br />
+  &bull; Ability to invoice and receive payments  electronically<br />
+  &bull; Secured transactions with 256-bit encryption  codes<br />
+  &bull; Improved customer satisfaction and retention<br />
+  &bull; Absence of need to purchase or install  software<br />
+  &bull; System flexibility and ability to support  their growth<br />
+  &bull; Integration with 99% of major accounting  systems <br />
+  &bull; &ldquo;Financial grade&rdquo; systems, developed by CPAs</p>
+</div>
+</div><!--ct_rt_bottom end-->
+
+
+</div><!--main_ct_rt end-->
+
+
+<div class="vr_hr_01"></div>
+
+<div class="main_ct_left"><!--main_ct_left st-->
+
+<div class="ct_lt_tx">
+Lorem Ipsum is simply dummy text of the printing and typesetting  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a...
+</div>
+<div class="ct_lt_box"><!--ct_lt_box st-->
+<div class="ct_lt_tx_1"> Variations of passages<br />
+ <div style="font-size:14px; color:#3e3e3e;">standard chunk of Lorem Ipsum used</div>
+</div>
+<div class="small_photo"></div>
+</div>
+<div class="ct_lt_tx" style="padding-top:25px;border-top:1px solid #656565;margin-top:35px;">
+Lorem Ipsum is simply dummy text of the printing and typesetting  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a...
+  
+</div>
+<div class="ct_lt_box"><!--ct_lt_box st-->
+<div class="ct_lt_tx_1"> Variations of passages<br />
+ <div style="font-size:14px; color:#3e3e3e;">standard chunk of Lorem Ipsum used</div>
+</div>
+<div class="small_photo"></div>
+</div>
+<!--ct_lt_box end-->
+</div><!--main_ct_left end-->
+
+
+
+
+<br clear="all" />
+<div class="clr"></div>
+</div><!--wrapper end-->
+
+<div class="main_footer"><!--main_footer st-->
+
+<div class="footer"><!--footer st-->
+<div class="ft_rt"><!---ft_rt st-->
+<div class="ft_rt_tx">COPYRIGHT &copy; 2012,INOVIUM CORPORATION.ALL RIGHTS RESERVED</div>
+</div><!--ft_rt end-->
+
+<div class="ft_lt"><!--ft_lt st-->
+<a href="#"><div class="social_1"></div></a>
+<a href="#"><div class="social_2"></div></a>
+<a href="#"><div class="social_3"></div></a>
+</div><!--ft_lt end-->
+
+
+
+</div><!--footer end-->
+
+
+
+
+</div><!--main_footer end-->
+
+
+</body>
+</html>

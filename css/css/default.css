@@ -1,0 +1,140 @@
+/*** BODY ***/
+* { padding:0; margin:0; }
+html {}
+body { font: 11px Arial, Tahoma, serif; color: #666; }
+
+h1 {}
+h2 {}
+h3 { text-transform: uppercase; }
+h3.arrow { text-indent: 30px; background: url(../images/arrow-ico.jpg) no-repeat; }
+p { line-height: 18px; margin-bottom: 10px; }
+a { color: #3366cc; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a img { border: none; }
+
+.clear { clear: both; }
+.floatleft { float: left; }
+.floatright { float: right; }
+.whitespace10 { height: 10px; }
+.whitespace20 { height: 20px; }
+
+td#rightcol { width: 200px; }
+td#centercol { width: 600px; padding: 0 20px; }
+td#leftcol { width: 186px; text-align:left;}
+td#footer { border-top: solid 2px #a7b4bc; padding: 20px 0; }
+td#footer a { color: #cc0000; }
+
+/*ul#topmenu { list-style: none; padding: 10px 0; }
+ul#topmenu li { display: inline; text-transform: uppercase; font-weight: bold; padding: 10px 0; }
+ul#topmenu li a { color: #fff; padding: 10px 20px; border-right: solid 1px #fff; }
+ul#topmenu li a:active, ul#topmenu li a:hover { color: #0000cc; text-decoration: none; }
+
+ul.submenu { list-style: none; width: 186px; border-top: solid 3px #ebe9ee; padding-top: 2px; }
+ul.submenu li { line-height: 29px; margin-bottom: 2px; text-indent: 5px; text-transform: uppercase; }
+ul.submenu li a { color: #666; font-weight: bold; background: #f5f4f6; display: block; width: 186px; height: 29px; }
+ul.submenu li a:hover, ul.submenu li a:active { color: #cc0000; text-decoration: none; background: #ebe9ee; }*/
+
+input { /*border: none;*/ margin-bottom: 5px; }
+input.mytext { padding: 3px; color: #999; font-size: 11px; border: solid 1px #ccc; }
+input#loginbtn { background: url(../images/btn-login.jpg) no-repeat; width: 147px; height: 21px; cursor: pointer; }
+input#searchbox { 
+	background: url(../images/search-bg.jpg) center right no-repeat; width: 300px; height: 30px;
+	font-size: 11px; padding: 0 60px 0 20px; color: #999; border: none; padding-top:12px; }
+input.addcartbtn { background: url(../images/btn-addcart.jpg) left top no-repeat; height: 21px; border: none; cursor: pointer; }
+input.detailsbtn { background: url(../images/btn-details.jpg) no-repeat; width: 175px; height: 21px; border: none; cursor: pointer; }
+
+table#loginbox { width: 186px; border-top: solid 3px #ebe9ee; padding: 10px; border-bottom: solid 3px #ebe9ee; border-left: solid 3px #ebe9ee; border-right: solid 3px #ebe9ee; background: #f5f4f6; line-height: 20px; }
+table#loginbox input.mytext { width: 139px; }
+
+.lnav { background: url(../images/larrow.jpg) left center no-repeat; padding-left: 15px; }
+.rnav { background: url(../images/rarrow.jpg) right center no-repeat; padding-right: 15px; }
+table.product { border: solid 1px #ecebeb; }
+table.product tr td.productitem { }
+table.product tr td.productitem br { margin-bottom: 8px; }
+table.product tr td.productitem input.addcartbtn { width: 175px; }
+table.product tr td.productdesc { width: 560px; }
+table.product tr td.productdesc p { font-size: 12px; margin-bottom: 10px; line-height: 24px; }
+table.product tr td.productdesc h3 { margin-bottom: 10px; }
+table.product tr td.productdesc input.mytext { width: 30px; }
+table.product tr td.productdesc input.addcartbtn { width: 125px; vertical-align: bottom; }
+
+.button1 {
+	font-family: Tahoma;
+	font-size: 11px;
+	background-color: #FFF;	
+	font-style: normal;	
+	color: #737373;	
+	text-align: center;
+	cursor: hand; 
+	border: 1px groove #F39; 
+	width:80px; 
+	height:20px;	
+}
+
+.button2 {
+	font-family: Tahoma;
+	font-size: 11px;
+	background-color: #FFF;	
+	font-style: normal;	
+	color: #737373;	
+	text-align: center;
+	cursor: hand; 
+	border: 1px groove #F39; 
+	width:120px; 
+	height:20px;	
+}
+
+.button3 {
+	font-family: Tahoma;
+	font-size: 11px;
+	background-color: #FFF;	
+	font-style: normal;	
+	color: #737373;	
+	text-align: center;
+	cursor: hand; 
+	border: 1px groove #F39; 
+	width:50px; 
+	height:20px;	
+}
+
+
+.txtbox1 {
+	font-family: Tahoma;
+	font-size: 11px;
+	height:20px;
+	background-color: #FFFFFF;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #F39;
+	border-right-color: #F39;
+	border-bottom-color: #F39;
+	border-left-color: #F39;
+}
+
+.textarea {  
+	font-family: Tahoma;
+	font-size: 11px;	
+	background-color: #FFFFFF;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #F39;
+	border-right-color: #F39;
+	border-bottom-color: #F39;
+	border-left-color: #F39;
+}
+
+.dropdown1 {
+  width:240px; height:18px; font-family:Tahoma; font-size:11px;
+}

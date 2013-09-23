@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	margin:0;
+	 
+ }
+.main{
+	width:600px;
+	margin:0 auto;
+	background:url(../images/tile.jpg) repeat;
+	text-align:center;
+}
+td{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	margin:0;
+}
+.container{
+	width:457px;
+	margin:0 auto;
+	padding:25px 20px;
+	background-color:#ffffff;
+	border-width:1px;
+	border-color:#cabcb3;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	-moz-border-radius:10px 10px 0px 0px;
+	-webkit-border-radius:10px 10px 0px 0px;
+	border-radius:10px 10px 0px 0px;
+}
+h1{
+	font-size:12px;
+	text-align: left;
+	text-transform: uppercase;
+}
+h2{
+	font-size:13px;
+	line-height:20px;
+	text-align:center;
+}
+p{	
+	margin:0;
+	font-size:12px;
+	line-height:18px;
+	text-align:justify;
+}
